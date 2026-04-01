@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ruby's world ♡</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND FLOWERS & VINES -->
+  <div class="bg-flowers" aria-hidden="true">
+    <svg class="vine vine-left" viewBox="0 0 60 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M30,0 C8,90 52,180 28,270 C6,360 50,450 26,540 C8,620 48,680 30,700" fill="none" stroke="#a8e0a8" stroke-width="2.5"/>
+      <ellipse cx="13" cy="100" rx="15" ry="7" fill="#b8eab8" transform="rotate(-38 13 100)"/>
+      <circle  cx="10" cy="97"  r="6"  fill="#F15BB5" opacity="0.75"/>
+      <ellipse cx="50" cy="200" rx="15" ry="7" fill="#b8eab8" transform="rotate(28 50 200)"/>
+      <circle  cx="52" cy="197" r="5"  fill="#FEE440" opacity="0.75"/>
+      <ellipse cx="12" cy="300" rx="14" ry="7" fill="#b8eab8" transform="rotate(-32 12 300)"/>
+      <circle  cx="9"  cy="297" r="6"  fill="#9B5DE5" opacity="0.75"/>
+      <ellipse cx="48" cy="400" rx="15" ry="7" fill="#b8eab8" transform="rotate(30 48 400)"/>
+      <circle  cx="50" cy="397" r="5"  fill="#FF9F1C" opacity="0.75"/>
+      <ellipse cx="13" cy="500" rx="14" ry="6" fill="#b8eab8" transform="rotate(-35 13 500)"/>
+      <circle  cx="10" cy="497" r="6"  fill="#00F5D4" opacity="0.75"/>
+      <ellipse cx="49" cy="600" rx="15" ry="7" fill="#b8eab8" transform="rotate(26 49 600)"/>
+      <circle  cx="51" cy="597" r="5"  fill="#FF6B6B" opacity="0.75"/>
+    </svg>
+    <svg class="vine vine-right" viewBox="0 0 60 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M30,0 C52,90 8,180 32,270 C54,360 10,450 34,540 C52,620 12,680 30,700" fill="none" stroke="#a8e0a8" stroke-width="2.5"/>
+      <ellipse cx="47" cy="100" rx="15" ry="7" fill="#b8eab8" transform="rotate(38 47 100)"/>
+      <circle  cx="50" cy="97"  r="6"  fill="#FF6B6B" opacity="0.75"/>
+      <ellipse cx="10" cy="200" rx="15" ry="7" fill="#b8eab8" transform="rotate(-28 10 200)"/>
+      <circle  cx="8"  cy="197" r="5"  fill="#9B5DE5" opacity="0.75"/>
+      <ellipse cx="48" cy="300" rx="14" ry="7" fill="#b8eab8" transform="rotate(32 48 300)"/>
+      <circle  cx="51" cy="297" r="6"  fill="#F15BB5" opacity="0.75"/>
+      <ellipse cx="12" cy="400" rx="15" ry="7" fill="#b8eab8" transform="rotate(-30 12 400)"/>
+      <circle  cx="9"  cy="397" r="5"  fill="#FEE440" opacity="0.75"/>
+      <ellipse cx="47" cy="500" rx="14" ry="6" fill="#b8eab8" transform="rotate(35 47 500)"/>
+      <circle  cx="50" cy="497" r="6"  fill="#FF9F1C" opacity="0.75"/>
+      <ellipse cx="11" cy="600" rx="15" ry="7" fill="#b8eab8" transform="rotate(-26 11 600)"/>
+      <circle  cx="9"  cy="597" r="5"  fill="#00F5D4" opacity="0.75"/>
+    </svg>
+    <!-- floating flowers -->
+    <span class="ff" style="top:8%;  left:18%; --fd:0s;   font-size:2.2rem">🌸</span>
+    <span class="ff" style="top:22%; left:74%; --fd:.5s;  font-size:1.8rem">🌼</span>
+    <span class="ff" style="top:42%; left:10%; --fd:1s;   font-size:2rem">🌺</span>
+    <span class="ff" style="top:58%; left:86%; --fd:.3s;  font-size:2.2rem">🌸</span>
+    <span class="ff" style="top:72%; left:22%; --fd:.8s;  font-size:1.6rem">🌻</span>
+    <span class="ff" style="top:30%; left:44%; --fd:1.2s; font-size:1.4rem">🌷</span>
+    <span class="ff" style="top:78%; left:62%; --fd:.6s;  font-size:1.8rem">🌼</span>
+    <span class="ff" style="top:14%; left:54%; --fd:.9s;  font-size:1.4rem">🌸</span>
+    <span class="ff" style="top:52%; left:33%; --fd:1.5s; font-size:1.7rem">🌺</span>
+    <span class="ff" style="top:88%; left:48%; --fd:.4s;  font-size:1.5rem">🌷</span>
+    <span class="ff" style="top:35%; left:88%; --fd:1.8s; font-size:1.3rem">🌻</span>
+    <span class="ff" style="top:65%; left:6%;  --fd:.7s;  font-size:1.5rem">🌼</span>
+  </div>
+
+  <!-- SKY SCENE -->
+  <div class="sky-scene" aria-hidden="true">
+    <svg class="sky-svg" viewBox="0 0 1440 175" preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#a8d8ff"/>
+          <stop offset="100%" stop-color="#e8f6ff" stop-opacity="0.1"/>
+        </linearGradient>
+        <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#FEE440" stop-opacity="0.45"/>
+          <stop offset="100%" stop-color="#FEE440" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1440" height="175" fill="url(#skyG)"/>
+      <!-- Sun glow -->
+      <circle cx="180" cy="88" r="110" fill="url(#sunGlow)"/>
+      <!-- Sun body -->
+      <circle cx="180" cy="88" r="58" fill="#FEE440"/>
+      <!-- Rays -->
+      <line x1="180" y1="18"  x2="180" y2="2"   stroke="#FF9F1C" stroke-width="5.5" stroke-linecap="round"/>
+      <line x1="228" y1="34"  x2="240" y2="22"  stroke="#FF9F1C" stroke-width="5.5" stroke-linecap="round"/>
+      <line x1="248" y1="82"  x2="264" y2="82"  stroke="#FF9F1C" stroke-width="5.5" stroke-linecap="round"/>
+      <line x1="228" y1="134" x2="240" y2="146" stroke="#FF9F1C" stroke-width="5.5" stroke-linecap="round"/>
+      <line x1="180" y1="152" x2="180" y2="168" stroke="#FF9F1C" stroke-width="5.5" stroke-linecap="round"/>
+      <line x1="132" y1="134" x2="120" y2="146" stroke="#FF9F1C" stroke-width="5.5" stroke-linecap="round"/>
+      <line x1="112" y1="82"  x2="96"  y2="82"  stroke="#FF9F1C" stroke-width="5.5" stroke-linecap="round"/>
+      <line x1="132" y1="34"  x2="120" y2="22"  stroke="#FF9F1C" stroke-width="5.5" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Drifting clouds -->
+    <svg class="cloud c1" viewBox="0 0 140 58" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="70" cy="44" rx="62" ry="18" fill="white" opacity="0.95"/>
+      <circle  cx="38" cy="36" r="20" fill="white" opacity="0.95"/>
+      <circle  cx="68" cy="26" r="26" fill="white" opacity="0.95"/>
+      <circle  cx="100" cy="33" r="18" fill="white" opacity="0.95"/>
+    </svg>
+    <svg class="cloud c2" viewBox="0 0 100 46" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="50" cy="35" rx="44" ry="14" fill="white" opacity="0.9"/>
+      <circle  cx="28" cy="28" r="15" fill="white" opacity="0.9"/>
+      <circle  cx="52" cy="20" r="20" fill="white" opacity="0.9"/>
+      <circle  cx="74" cy="26" r="14" fill="white" opacity="0.9"/>
+    </svg>
+    <svg class="cloud c3" viewBox="0 0 120 50" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="60" cy="38" rx="54" ry="16" fill="white" opacity="0.92"/>
+      <circle  cx="32" cy="30" r="17" fill="white" opacity="0.92"/>
+      <circle  cx="60" cy="22" r="22" fill="white" opacity="0.92"/>
+      <circle  cx="90" cy="28" r="16" fill="white" opacity="0.92"/>
+    </svg>
+    <svg class="cloud c4" viewBox="0 0 80 38" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="40" cy="29" rx="35" ry="12" fill="white" opacity="0.88"/>
+      <circle  cx="22" cy="23" r="13" fill="white" opacity="0.88"/>
+      <circle  cx="42" cy="16" r="16" fill="white" opacity="0.88"/>
+      <circle  cx="60" cy="21" r="12" fill="white" opacity="0.88"/>
+    </svg>
+    <svg class="cloud c5" viewBox="0 0 160 65" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="80" cy="50" rx="72" ry="18" fill="white" opacity="0.9"/>
+      <circle  cx="42" cy="40" r="22" fill="white" opacity="0.9"/>
+      <circle  cx="78" cy="28" r="28" fill="white" opacity="0.9"/>
+      <circle  cx="116" cy="36" r="20" fill="white" opacity="0.9"/>
+    </svg>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">ruby.exe</div>
+    <ul>
+      <li><a href="#" class="nav-link active" data-tab="home">home</a></li>
+      <li><a href="#" class="nav-link" data-tab="sidequests">sidequest log</a></li>
+      <li><a href="#" class="nav-link" data-tab="journal">journal</a></li>
+      <li><a href="#" class="nav-link" data-tab="contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ===== HOME TAB ===== -->
+    <div id="tab-home" class="tab active">
+      <section class="hero">
+
+        <!-- floating decorations -->
+        <span class="fdeco" style="top:8%;  left:4%;  font-size:2.4rem; --d:0s">🌸</span>
+        <span class="fdeco" style="top:15%; right:6%; font-size:1.8rem; --d:.4s">✦</span>
+        <span class="fdeco" style="top:70%; left:7%;  font-size:2rem;   --d:.8s">💫</span>
+        <span class="fdeco" style="top:80%; right:5%; font-size:2.6rem; --d:.2s">🌼</span>
+        <span class="fdeco" style="top:40%; left:2%;  font-size:1.5rem; --d:1s">✨</span>
+        <span class="fdeco" style="top:55%; right:3%; font-size:1.6rem; --d:.6s">⭐</span>
+        <span class="fdeco" style="top:25%; left:12%; font-size:1.3rem; --d:1.2s">🎀</span>
+
+        <div class="hero-layout">
+          <!-- LEFT: text -->
+          <div class="hero-content">
+            <h1 id="hero-h1"></h1>
+            <p class="about-text" id="about-text"></p>
+            <a href="#" class="btn" data-tab="journal">enter the journal →</a>
+          </div>
+
+          <!-- RIGHT: art piece -->
+          <div class="hero-art">
+            <!-- spinning mandala -->
+            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+              <!-- background -->
+              <circle cx="150" cy="150" r="148" fill="#fdf0ff"/>
+              <!-- spinning flower petals -->
+              <g>
+                <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="18s" repeatCount="indefinite"/>
+                <ellipse cx="150" cy="82" rx="42" ry="76" fill="#9B5DE5" opacity="0.88"/>
+                <ellipse cx="150" cy="82" rx="42" ry="76" fill="#F15BB5" opacity="0.88" transform="rotate(60  150 150)"/>
+                <ellipse cx="150" cy="82" rx="42" ry="76" fill="#FEE440" opacity="0.9"  transform="rotate(120 150 150)"/>
+                <ellipse cx="150" cy="82" rx="42" ry="76" fill="#00F5D4" opacity="0.88" transform="rotate(180 150 150)"/>
+                <ellipse cx="150" cy="82" rx="42" ry="76" fill="#FF6B6B" opacity="0.88" transform="rotate(240 150 150)"/>
+                <ellipse cx="150" cy="82" rx="42" ry="76" fill="#FF9F1C" opacity="0.88" transform="rotate(300 150 150)"/>
+              </g>
+              <!-- center rings (static, on top) -->
+              <circle cx="150" cy="150" r="56" fill="white"/>
+              <circle cx="150" cy="150" r="46" fill="#FEE440"/>
+              <circle cx="150" cy="150" r="30" fill="#FF9F1C"/>
+              <circle cx="150" cy="150" r="15" fill="#9B5DE5"/>
+              <!-- outer border -->
+              <circle cx="150" cy="150" r="148" fill="none" stroke="white" stroke-width="6"/>
+            </svg>
+
+            <!-- floating labels with hover tooltips -->
+            <div class="art-label art-label-1">
+              law ⚖️
+              <div class="art-tooltip">
+                I've come back to my earliest dream of becoming a lawyer. I'm drawn to working with emerging companies and in VC law — where innovation meets the courtroom.
+              </div>
+            </div>
+            <div class="art-label art-label-2">
+              code 💻
+              <div class="art-tooltip">
+                Growing up in Silicon Valley, learning to vibe code was basically inevitable. It's my rite of passage.
+              </div>
+            </div>
+            <div class="art-label art-label-3">
+              quests 🗺️
+              <div class="art-tooltip">
+                One word: freewill. On a mission to dodge stagnancy and reclaim the childlike whimsy I had growing up.
+              </div>
+            </div>
+            <div class="art-label art-label-4">
+              GradientFi ⛓️
+              <div class="art-tooltip">
+                Building on-chain infrastructure to optimize cross-border transactions — with a focus on emerging markets where access matters most.
+              </div>
+            </div>
+            <div class="art-label art-label-5">
+              fitness 🏃‍♀️
+              <div class="art-tooltip">
+                Training for an Ironman — starting with a sub-20 5K. The long game starts with one milestone at a time.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- ===== SIDEQUEST LOG TAB ===== -->
+    <div id="tab-sidequests" class="tab">
+      <section class="page">
+
+        <!-- section art -->
+        <div class="journal-header">
+          <div>
+            <h2 class="section-title">sidequesting log</h2>
+            <p class="section-subtitle">click a month to flip it open ♡</p>
+          </div>
+          <svg class="journal-art" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20"  cy="40" r="18" fill="#F15BB5" opacity="0.8"/>
+            <circle cx="60"  cy="30" r="14" fill="#FEE440" opacity="0.9"/>
+            <circle cx="95"  cy="45" r="20" fill="#9B5DE5" opacity="0.75"/>
+            <circle cx="135" cy="28" r="16" fill="#00F5D4" opacity="0.85"/>
+            <circle cx="170" cy="42" r="15" fill="#FF6B6B" opacity="0.8"/>
+            <circle cx="195" cy="20" r="10" fill="#FF9F1C" opacity="0.9"/>
+          </svg>
+        </div>
+
+        <div class="cards-grid">
+
+          <!-- JANUARY -->
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front fc-jan">
+                <div class="card-month-emoji">❄️</div>
+                <div class="card-month-name">january</div>
+                <div class="card-month-year">2026</div>
+                <div class="card-hint">tap to open</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="back-section">
+                  <div class="back-label jan-label">⚔️ sidequests</div>
+                  <ul class="back-list">
+                    <li>walked 20 miles with my best friend on a whim</li>
+                    <li>started a planking challenge to hit 5 mins</li>
+                    <li>became an ordained minister</li>
+                  </ul>
+                </div>
+                <div class="back-section">
+                  <div class="back-label jan-label">📚 media consumed</div>
+                  <ul class="back-list">
+                    <li>Dhurandar</li>
+                  </ul>
+                </div>
+                <div class="card-hint-back">tap to flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEBRUARY -->
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front fc-feb">
+                <div class="card-month-emoji">🌹</div>
+                <div class="card-month-name">february</div>
+                <div class="card-month-year">2026</div>
+                <div class="card-hint">tap to open</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="back-section">
+                  <div class="back-label feb-label">⚔️ sidequests</div>
+                  <ul class="back-list">
+                    <li>fell in love 🩷</li>
+                    <li>took the LSAT for the first time</li>
+                    <li>joined a South Asian book club</li>
+                  </ul>
+                </div>
+                <div class="back-section">
+                  <div class="back-label feb-label">📚 media consumed</div>
+                  <ul class="back-list">
+                    <li>JS Mill — On Liberty & The Subjection of Women</li>
+                    <li>Tere Ishq Mein</li>
+                  </ul>
+                </div>
+                <div class="card-hint-back">tap to flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MARCH -->
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front fc-mar">
+                <div class="card-month-emoji">🌸</div>
+                <div class="card-month-name">march</div>
+                <div class="card-month-year">2026</div>
+                <div class="card-hint">tap to open</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="back-section">
+                  <div class="back-label mar-label">⚔️ sidequests</div>
+                  <ul class="back-list">
+                    <li>hit the 5-min planking goal 💪</li>
+                    <li>launched a freelance business</li>
+                    <li>studying for the LSAT (retake)</li>
+                    <li>daily 2-min speaking practice to refine articulation</li>
+                    <li>vibe coded this entire website</li>
+                  </ul>
+                </div>
+                <div class="back-section">
+                  <div class="back-label mar-label">📚 media consumed</div>
+                  <ul class="back-list">
+                    <li>re-read The Alchemist</li>
+                    <li>"The Accidental Rise of Botox" — Unexplainable by Vox</li>
+                    <li>"Sad Nipple Syndrome" — Science Vs.</li>
+                    <li>Dhurandar 2</li>
+                  </ul>
+                </div>
+                <div class="card-hint-back">tap to flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- APRIL — future -->
+          <div class="flip-card future" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front fc-apr">
+                <div class="card-month-emoji">🌷</div>
+                <div class="card-month-name">april</div>
+                <div class="card-month-year">2026</div>
+                <div class="card-hint">coming soon...</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="future-back">adventures incoming 🌱</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAY — future -->
+          <div class="flip-card future" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front fc-may">
+                <div class="card-month-emoji">🌻</div>
+                <div class="card-month-name">may</div>
+                <div class="card-month-year">2026</div>
+                <div class="card-hint">coming soon...</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="future-back">adventures incoming 🌱</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ===== JOURNAL TAB ===== -->
+    <div id="tab-journal" class="tab">
+      <section class="page">
+        <h2 class="section-title">journal</h2>
+        <p class="section-subtitle">thoughts, summaries & things worth sitting with ✨</p>
+        <div class="journal-intro card card-purple">
+          <p>Every book, documentary, podcast, and film I consume leaves something behind — an idea, a question, a shift in perspective. This is where I unpack it. Expect honest summaries, the lines that stuck with me, and what I actually took away from it all.</p>
+          <p class="journal-intro-sub">entries coming soon.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== CONTACT TAB ===== -->
+    <div id="tab-contact" class="tab">
+      <section class="page contact-page">
+        <h2 class="section-title">say hi!</h2>
+        <p class="section-subtitle">i'd love to hear from you ♡</p>
+        <div class="contact-box">
+          <div class="contact-links">
+            <a href="mailto:khanrubynazir@gmail.com" class="contact-link cl-purple">
+              <span class="contact-icon">✉️</span><span>khanrubynazir@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ruby-khan98/" target="_blank" rel="noopener" class="contact-link cl-teal">
+              <span class="contact-icon">🔗</span><span>linkedin</span>
+            </a>
+            <a href="https://ruby98.substack.com" target="_blank" rel="noopener" class="contact-link cl-coral">
+              <span class="contact-icon">📝</span><span>substack</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- NATURE SCENE -->
+  <div class="nature-scene" aria-hidden="true">
+    <div class="bunnies-track">
+      <span class="bunny b1">🐇</span>
+      <span class="bunny b2">🐰</span>
+      <span class="bunny b3">🐇</span>
+    </div>
+    <svg class="scene-svg" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <!-- back hills -->
+      <path d="M0,100 C160,55 340,120 520,80 C700,40 880,110 1060,72 C1200,44 1340,95 1440,65 L1440,240 L0,240 Z" fill="#c8f0c8" opacity="0.7"/>
+      <!-- main hills -->
+      <path d="M0,130 C180,90 360,150 540,115 C720,80 900,140 1080,105 C1240,75 1360,125 1440,100 L1440,240 L0,240 Z" fill="#7dd87d"/>
+      <!-- front grass -->
+      <rect x="0" y="175" width="1440" height="65" fill="#5cb85c"/>
+      <!-- ground -->
+      <rect x="0" y="210" width="1440" height="30" fill="#4cae4c"/>
+
+      <!-- TREE 1 (x=148) -->
+      <rect x="138" y="100" width="20" height="78" fill="#795548"/>
+      <polygon points="148,18  96,112 200,112" fill="#1b5e20"/>
+      <polygon points="148,42 100,118 196,118" fill="#2e7d32"/>
+      <polygon points="148,65 104,124 192,124" fill="#388e3c"/>
+
+      <!-- TREE 2 (x=340) -->
+      <rect x="332" y="88" width="17" height="88" fill="#795548"/>
+      <polygon points="340,8   288,100 392,100" fill="#1b5e20"/>
+      <polygon points="340,34  292,106 388,106" fill="#2e7d32"/>
+      <polygon points="340,58  296,114 384,114" fill="#388e3c"/>
+
+      <!-- TREE 3 TALL CENTER (x=710) -->
+      <rect x="698" y="72" width="24" height="104" fill="#6d4c41"/>
+      <polygon points="710,0   644,88  776,88"  fill="#1b5e20"/>
+      <polygon points="710,26  648,95  772,95"  fill="#2e7d32"/>
+      <polygon points="710,52  652,104 768,104" fill="#388e3c"/>
+      <polygon points="710,76  656,112 764,112" fill="#43a047"/>
+
+      <!-- TREE 4 (x=1050) -->
+      <rect x="1041" y="92" width="18" height="84" fill="#795548"/>
+      <polygon points="1050,12 998,104 1102,104" fill="#1b5e20"/>
+      <polygon points="1050,38 1002,110 1098,110" fill="#2e7d32"/>
+      <polygon points="1050,62 1006,118 1094,118" fill="#388e3c"/>
+
+      <!-- TREE 5 (x=1295) -->
+      <rect x="1285" y="98" width="20" height="78" fill="#795548"/>
+      <polygon points="1295,18 1243,110 1347,110" fill="#1b5e20"/>
+      <polygon points="1295,44 1247,116 1343,116" fill="#2e7d32"/>
+      <polygon points="1295,68 1251,122 1339,122" fill="#388e3c"/>
+
+      <!-- Flowers in grass (bigger) -->
+      <circle cx="60"   cy="172" r="8" fill="#F15BB5"/><circle cx="60"   cy="164" r="5" fill="white"/>
+      <circle cx="200"  cy="170" r="7" fill="#FEE440"/><circle cx="200"  cy="163" r="4" fill="white"/>
+      <circle cx="390"  cy="173" r="8" fill="#9B5DE5"/><circle cx="390"  cy="165" r="5" fill="white"/>
+      <circle cx="560"  cy="171" r="7" fill="#FF9F1C"/><circle cx="560"  cy="164" r="4" fill="white"/>
+      <circle cx="720"  cy="173" r="8" fill="#FF6B6B"/><circle cx="720"  cy="165" r="5" fill="white"/>
+      <circle cx="870"  cy="171" r="7" fill="#F15BB5"/><circle cx="870"  cy="164" r="4" fill="white"/>
+      <circle cx="1020" cy="172" r="8" fill="#00F5D4"/><circle cx="1020" cy="165" r="5" fill="white"/>
+      <circle cx="1180" cy="170" r="7" fill="#FEE440"/><circle cx="1180" cy="163" r="4" fill="white"/>
+      <circle cx="1360" cy="173" r="8" fill="#9B5DE5"/><circle cx="1360" cy="165" r="5" fill="white"/>
+
+      <!-- Grass blades -->
+      <line x1="30"   y1="175" x2="26"   y2="160" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="42"   y1="175" x2="47"   y2="158" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="180"  y1="175" x2="176"  y2="161" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="300"  y1="175" x2="305"  y2="159" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="480"  y1="175" x2="476"  y2="161" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="640"  y1="175" x2="645"  y2="158" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="800"  y1="175" x2="796"  y2="161" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="950"  y1="175" x2="955"  y2="159" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="1110" y1="175" x2="1106" y2="161" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="1270" y1="175" x2="1275" y2="158" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="1430" y1="175" x2="1426" y2="161" stroke="#3d8b3d" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <footer>
+    <p>made with ♡ by ruby &nbsp;·&nbsp; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
