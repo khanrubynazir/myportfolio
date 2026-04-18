@@ -1,3 +1,4 @@
+// Portfolio UI: typewriter hero + tab navigation.
 // ===== TYPEWRITER =====
 function typeWriter(el, text, speed, onDone) {
   el.textContent = '';
