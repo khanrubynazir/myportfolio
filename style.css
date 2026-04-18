@@ -488,6 +488,7 @@ nav ul { list-style: none; display: flex; gap: 2.5rem; }
 .jan-label { color: var(--purple); border-color: rgba(155,93,229,0.25); }
 .feb-label { color: #d4438a;       border-color: rgba(212,67,138,0.25); }
 .mar-label { color: #c47c00;       border-color: rgba(196,124,0,0.25); }
+.apr-label { color: #00997a;       border-color: rgba(0,153,122,0.25); }
 
 .back-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
 
