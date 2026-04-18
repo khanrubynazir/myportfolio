@@ -30,14 +30,14 @@ window.addEventListener('DOMContentLoaded', () => {
   const h1     = document.querySelector('.hero-content h1');
   const about  = document.querySelector('.about-text');
 
-  const h1Text    = "Hi, i'm Amitesh!";
+  const h1Text    = "Hi, my name is Ruby";
   const aboutText = "I'm an aspiring lawyer. Jack of all trades, master of none — but oftentimes better than a master of one.";
 
   // type h1 first
   const c1 = addCursor(h1);
   typeWriter(h1, h1Text, 80, () => {
-    // color "Amitesh" after typing finishes
-    h1.innerHTML = h1.innerHTML.replace('Amitesh', '<span class="highlight">Amitesh</span>');
+    // color "Ruby" after typing finishes
+    h1.innerHTML = h1.innerHTML.replace('Ruby', '<span class="highlight">Ruby</span>');
     removeCursor(c1);
 
     // small pause then type about text
